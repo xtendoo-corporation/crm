@@ -1,6 +1,6 @@
 [project]
 name = "odoo-addons-oca-crm"
-version = "17.0.20241118.0"
+version = "17.0.20241120.0"
 dependencies = [
     "odoo-addon-crm_industry>=17.0dev,<17.1dev",
     "odoo-addon-crm_lead_code>=17.0dev,<17.1dev",
@@ -14,6 +14,7 @@ dependencies = [
     "odoo-addon-crm_phonecall_summary_predefined>=17.0dev,<17.1dev",
     "odoo-addon-crm_salesperson_planner>=17.0dev,<17.1dev",
     "odoo-addon-crm_stage_probability>=17.0dev,<17.1dev",
+    "odoo-addon-marketing_crm_partner>=17.0dev,<17.1dev",
 ]
 classifiers=[
     "Programming Language :: Python",

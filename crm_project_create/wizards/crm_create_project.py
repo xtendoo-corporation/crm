@@ -11,15 +11,19 @@ class CrmCreateProject(models.TransientModel):
     project_name = fields.Char()
     project_description = fields.Html()
     lead_id = fields.Many2one("crm.lead")
-    duplicate_project_id = fields.Many2one("project.project", string="Duplicate Project")
+    duplicate_project_id = fields.Many2one(
+        "project.project", string="Duplicate Project"
+    )
 
     def create_project(self):
         if self.duplicate_project_id:
-            project = self.duplicate_project_id.copy({
-                "name": self.project_name,
-                "description": self.project_description,
-                "lead_id": self.lead_id.id,
-            })
+            project = self.duplicate_project_id.copy(
+                {
+                    "name": self.project_name,
+                    "description": self.project_description,
+                    "lead_id": self.lead_id.id,
+                }
+            )
         else:
             project = (
                 self.env["project.project"]
@@ -42,15 +46,18 @@ class CrmCreateProject(models.TransientModel):
             "allow_billable": True,
         }
         if self.duplicate_project_id:
-            values.update({
-                "name": self.project_name,
-                "description": self.project_description,
-                "lead_id": self.lead_id.id,
-            })
+            values.update(
+                {
+                    "name": self.project_name,
+                    "description": self.project_description,
+                    "lead_id": self.lead_id.id,
+                }
+            )
         else:
-            values.update({
-                "partner_id": self.lead_id.partner_id.id,
-                "company_id": self.lead_id.company_id.id,
-            })
+            values.update(
+                {
+                    "partner_id": self.lead_id.partner_id.id,
+                    "company_id": self.lead_id.company_id.id,
+                }
+            )
         return values
-

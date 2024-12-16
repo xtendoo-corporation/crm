@@ -13,7 +13,7 @@
                 <group>
                     <field name="project_name" />
                     <field name="project_description" type="html" />
-                    <field name="duplicate_project_id"/>
+                    <field name="duplicate_project_id" />
                 </group>
                 <footer>
                     <button

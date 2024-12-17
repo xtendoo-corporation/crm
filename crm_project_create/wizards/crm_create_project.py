@@ -51,6 +51,8 @@ class CrmCreateProject(models.TransientModel):
                     "name": self.project_name,
                     "description": self.project_description,
                     "lead_id": self.lead_id.id,
+                    "partner_id": self.lead_id.partner_id.id,
+                    "company_id": self.lead_id.company_id.id,
                 }
             )
         else:

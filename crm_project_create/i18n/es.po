@@ -1,21 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* crm_create_project
+# 	* crm_project_create
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0+e\n"
+"Project-Id-Version: Odoo Server 17.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 12:20+0000\n"
-"PO-Revision-Date: 2024-07-17 14:20+0200\n"
-"Last-Translator: Emilio Pascual <emilio@moduom.team>\n"
+"POT-Creation-Date: 2024-12-17 06:59+0000\n"
+"PO-Revision-Date: 2024-12-17 06:59+0000\n"
+"Last-Translator: \n"
 "Language-Team: \n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.4\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. module: crm_project_create
 #: model_terms:ir.ui.view,arch_db:crm_project_create.crm_create_project_view_form
@@ -45,14 +43,14 @@ msgid "Display Name"
 msgstr "Nombre mostrado"
 
 #. module: crm_project_create
+#: model:ir.model.fields,field_description:crm_project_create.field_crm_create_project__duplicate_project_id
+msgid "Duplicate Project"
+msgstr "Duplicar proyecto"
+
+#. module: crm_project_create
 #: model:ir.model.fields,field_description:crm_project_create.field_crm_create_project__id
 msgid "ID"
 msgstr ""
-
-#. module: crm_project_create
-#: model:ir.model.fields,field_description:crm_project_create.field_crm_create_project____last_update
-msgid "Last Modified on"
-msgstr "Última modificación el"
 
 #. module: crm_project_create
 #: model:ir.model.fields,field_description:crm_project_create.field_crm_create_project__write_uid
@@ -72,7 +70,7 @@ msgstr "Iniciativa/Oportundad"
 #. module: crm_project_create
 #: model:ir.model,name:crm_project_create.model_crm_lead
 msgid "Lead/Opportunity"
-msgstr "Iniciativa/Oportundad"
+msgstr "Lead/Oportunidad"
 
 #. module: crm_project_create
 #: model:ir.model.fields,field_description:crm_project_create.field_crm_lead__project_id
@@ -90,6 +88,11 @@ msgid "Project Name"
 msgstr "Nombre del proyecto"
 
 #. module: crm_project_create
+#: model:ir.model.fields,help:crm_project_create.field_crm_lead__project_id
+msgid "Related project for this lead"
+msgstr ""
+
+#. module: crm_project_create
 #: model:ir.model,name:crm_project_create.model_crm_create_project
 msgid "Wizart to create Project from Lead/Opportunity"
 msgstr "Asistente para crear un proyecto desde la iniciativa/oportunidad"
@@ -98,19 +101,3 @@ msgstr "Asistente para crear un proyecto desde la iniciativa/oportunidad"
 #: model_terms:ir.ui.view,arch_db:crm_project_create.crm_create_project_view_form
 msgid "You won't be able to edit this project after creating it"
 msgstr ""
-
-#, python-format
-#~ msgid ""
-#~ "Project <a href=# data-oe-model=project.project data-oe-"
-#~ "id=%(project)d>%(name)s</a> created."
-#~ msgstr ""
-#~ "Proyecto <a href=# data-oe-model=project.project data-oe-"
-#~ "id=%(project)d>%(name)s</a> creado."
-
-#, python-format
-#~ msgid ""
-#~ "Project created from lead/opportunity <a href=# data-oe-model=crm.lead "
-#~ "data-oe-id=%(lead)d>%(name)s</a>."
-#~ msgstr ""
-#~ "Proyecto creado desde la iniciativa/oportunidad <a href=# data-oe-"
-#~ "model=crm.lead data-oe-id=%(lead)d>%(name)s</a>."
